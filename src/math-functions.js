@@ -129,25 +129,6 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 This function should be dynamic, accepting an array of any length.
 */
 
-export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-    // let strings = dynamicArray.toString();
-    // let product = 1;
-    // for (let i = 0; i < dynamicArray.length; i++); {
-    //     product = multiply(product, dynamicArray[i])[0];
-    //     return [product[0], `The numbers ${strings} have a product of ${product}.`];        
-    // }
-
-    let strings = dynamicArray.toString();
-    let bigDog = 1;
-    for (var i = 0; i < dynamicArray.length; i++); {
-        bigDog = multiply(bigDog, dynamicArray[i])[0];        
-    }
-    return [bigDog[0], `The numbers ${strings} have a product of ${bigDog}.`]; 
-}
-    // var dynamicArray = dynamicArray.toString();
-    // for (var i = 0; i < numbers.length; i++)
-
-
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 // You're done! Submit the link to the repo following the instructions in Canvas.
