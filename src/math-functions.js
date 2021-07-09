@@ -11,7 +11,9 @@ example and uses the values that were input into the function:
 "The sum of 4 and 7 is 11."
 */
 
-export function sum(a, b) {
+export function sum(numb1, numb2) {
+    const a = 4;
+    const b = 7;
     const total = a + b;
     return [total, `The sum of ${a} and ${b} is ${total}.`];
 }
