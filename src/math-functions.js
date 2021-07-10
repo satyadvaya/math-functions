@@ -11,9 +11,7 @@ example and uses the values that were input into the function:
 "The sum of 4 and 7 is 11."
 */
 
-export function sum(numb1, numb2) {
-    const a = 4;
-    const b = 7;
+export function sum(a, b) {
     const total = a + b;
     return [total, `The sum of ${a} and ${b} is ${total}.`];
 }
@@ -28,9 +26,7 @@ Write a function called multiply() that takes in two numbers as arguments and re
 "The product of 5 and 9 is 45."
 */
 
-export function multiply(numb1, numb2) {
-    const a = 5;
-    const b = 9;
+export function multiply(a, b) {
     const product = a * b;
     return [product, `The product of ${a} and ${b} is ${product}.`];
 }
@@ -83,11 +79,7 @@ to use the + operator for string concatenation.
 */
 
 export function sumArrayWithThreeNumbers(sumArr) {
-    const sum1 = sum(sumArr[0], sumArr[1]);
-    const sum2 = sum(sum1[0], sumArr[2]);
-    console.log(sum1);
-    console.log(sum2);
-    return [sum2[0], `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${sum2[0]} is their sum.`];
+
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
@@ -110,10 +102,7 @@ you may continue to use the + operator for string concatenation.
 */
 
 export function multiplyArrayWithThreeNumbers(multArr) { //eslint-disable-line
-    const product1 = multiply(multArr[0], multArr[1]);
-    const product2 = multiply(product1[0], multArr[2]);
-    return [product2[0], `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${product2[0]}.`];
-    // return [`The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${product2[0]}.`];
+
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
